@@ -37,13 +37,19 @@ body {
     gap: 32px;
 }
 
-/* Grid */
+/* Formatações gerais - Cards */
 
-.grid-item {
-
+.card .nome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
 }
 
-/* Formatações gerais - Cards */
+.card .nome img{
+    border-radius: 32px;
+    border: 1px solid var(--cinza-claro);
+}
 
 .card {
     padding: 32px;
@@ -58,11 +64,12 @@ body {
 
 .card h4{
     font-weight: 600;
+    font-size: 0.9em;
 }
 
 .card h6, .card p{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 20px;
     letter-spacing: 0.03em;
 }
@@ -129,4 +136,14 @@ body {
 .attribution {
     text-align: center;
     font-size: 10px;
+}
+
+/* Media Queries */
+
+@media (min-width: 350px) and (max-width: 712px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
